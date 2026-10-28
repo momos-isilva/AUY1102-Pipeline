@@ -12,6 +12,7 @@ on:
 
 jobs:
   lint:
+    name: Verificación Estática y Estilo de Código (ESLint & Prettier)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -29,6 +30,7 @@ jobs:
         run: npm run lint
   
   test:
+    name: Ejecución de Pruebas Unitarias Automatizadas (Jest)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
